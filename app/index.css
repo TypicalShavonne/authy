@@ -52,17 +52,6 @@ body {
   padding: 24px;
 }
 
-#github-ref {
-  position: fixed;
-  bottom: 12px;
-  left: 12px;
-  width: 32px;
-  height: 32px;
-  background: url(github-icon.png) no-repeat;
-  background-size: contain;
-  filter: invert(25%);
-}
-
 #header-container {
   font-size: 20px;
   font-weight: 500;
@@ -167,17 +156,6 @@ body {
   transform: rotateY(180deg);
 }
 
-#light-switch {
-  position: fixed;
-  right: 12px;
-  bottom: 12px;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-  background: url(light-bulb.png) no-repeat;
-  background-size: contain;
-}
-
 #more-button {
   width: 24px;
   height: 24px;
@@ -189,12 +167,6 @@ body {
 #more-button,
 #input-image-button,
 #input-video-button,
-#light-switch
-{
-    background-size: contain;
-    cursor: pointer;
-    filter: invert(75%);
-}
 
 #otpauth-qr {
   position: relative;

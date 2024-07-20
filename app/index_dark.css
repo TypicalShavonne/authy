@@ -29,11 +29,7 @@ body
 
 #more-button,
 #input-image-button,
-#input-video-button,
-#light-switch
-{
-    filter: invert(25%);
-}
+#input-video-button
 
 #otpauth-qr
 {

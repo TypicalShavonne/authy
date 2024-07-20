@@ -77,7 +77,7 @@ function updateQrCode() {
     const account = document.getElementById('input-account').value;
     const period = document.getElementById('input-period').value;
 
-    let qrMessage = 'https://qoomon.me'
+    let qrMessage = 'https://typicalsmc.tech'
     document.getElementById('otpauth-qr-overlay').style.display = '';
     
     if (secret && account) {
@@ -152,12 +152,6 @@ function toggleOtpAuthDetails() {
     } else {
         hideOtpAuthDetails();
     }
-}
-
-function toggleDarkMode() {
-    const darkStyleElement = document.getElementById('dark-mode');
-    darkStyleElement.disabled = !darkStyleElement.disabled;
-    Cookies.set("otp-authenticator.darkStyle", !darkStyleElement.disabled);
 }
 
 function setRemainingTimePiePercentage(percentage) {
@@ -327,11 +321,6 @@ document.getElementById('input-period').addEventListener('input', () => {
     }, false);
 });
 
-['click', 'tap'].forEach(event => {
-    document.getElementById('light-switch').addEventListener(event, function () {
-        toggleDarkMode();
-    }, false);
-});
 
 // ################  run  ##################
 if (!Cookies.get("otp-authenticator.darkStyle") && window.matchMedia('(prefers-color-scheme: dark)').matches) {
